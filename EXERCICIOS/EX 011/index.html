@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamanho de imagens</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <picture>
+        <source media="(max-width: 700px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png"
+         alt="imagem flexivel">
+    </picture>
+    <h1>Reproduzindo Audio em HTML5</h1>
+    <audio src="midia/Tell Me That I Can't (Clean) - NEFFEX.mp3" controls autoplay></audio>
+    <h2>caso voce queira adicionar varios formatos de um unico audio adicione audio></h2>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/Tell Me That I Can't (Clean) - NEFFEX.mp3" type="audio/mpeg">
+        <source src="midia/Tell Me That I Can't (Clean) - NEFFEX.WAV" type="audio/wav">
+        <source src="midia/Tell Me That I Can't (Clean) - NEFFEX.OGG" type="audio/ogg">
+       
+
+
+    </audio>
+   <p>infezlimente não foi possivel reproduzir este audio <a href="midia/Tell Me That I Can't (Clean) - NEFFEX.mp3">clique</a> aqui para baixar o arquivo mp3</p>
+
+    
+</body>
+</html>

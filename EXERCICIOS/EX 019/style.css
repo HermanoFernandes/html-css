@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+body {
+    font: normal 1em arial;
+    background-color: #708090;
+}
+
+#principal {
+    color: #42704b;
+    text-align: center;
+    background-color: #9caab8;
+    font-weight: 900;
+    
+}
+.htmlcss { text-align: center;
+   color: #84d693;
+   font-weight: normal;
+}
+
+.basico { text-indent: 20px;
+    color: #3BF501;
+
+}
+
+.intermediario { color: #ffe600;
+    text-indent: 20px;
+
+}
+
+.avançado { color: red;
+    text-indent: 20px;
+
+}
+
+.conteudo {
+    background-color: #3BF501;
+}
+
+p {
+    text-align: justify;
+    color: white;
+}
