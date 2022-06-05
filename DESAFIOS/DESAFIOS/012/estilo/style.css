@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgba(129, 126, 126, 0.699);
+
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    
+}
+
+header > p {
+    padding-top: 10px;
+}
+
+
+section {
+    padding: 20px;
+}
