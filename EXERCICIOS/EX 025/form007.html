@@ -8,27 +8,47 @@
 </head>
 <body>
     <h1>Exemplo de Formulário</h1>
-
-    <form action="cadastro.php" method="get" autocomplete="on">
-
+    <form action="cadastro.php" method="post" autocomplete="on">
         <p>
-            <label for="estado">estado</label>
-            <select name="estado" id="estado"></select>
-            
-            <option value=""></option>
-            <optgroup label="Região Sudeste">
-                <option value="MG">Minas Gerais</option>
-                <option value="RJ">Rio de Janeiro<option>
-                <option value="SP">São Paulo</option>
-            </optgroup>
+            <label for="estado">Estado:</label>
+            <select name="estado" id="estado">
+                <option value="" selected>---Escolha---</option>
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
 
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+        </p>
+        
+        <p>
+            <label for="prof">Profissão</label>
+            <input type="text" name="prof" id="prof" list="iprof" checked>
+            
+            <datalist id="iprof">
+                <option value="ADM">Adminstrador</option>
+                <option value="COT">Contabilista</option>
+                <option value="DEV">Dsenvolvedor</option>
+                <option value="PRO">Professor</option>
+            </datalist>  
+
+        </p>
+        
+        <p>
+            <label for="mensagem">Mensagens</label> <br>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
         </p>
 
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
-
     </form>
 </body>
-</html>
+</html>     
