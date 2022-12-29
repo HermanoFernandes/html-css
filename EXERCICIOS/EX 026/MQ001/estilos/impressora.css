@@ -1,6 +1,9 @@
 @charset "UTF-8";
 
-/* Estilo  para impressoras */
+* {
+    margin: 10px;
+    padding: 10px;
+}
 
 html {
     font-family: 'Courier New', Courier, monospace;
@@ -13,9 +16,6 @@ menu {
 }
 
 article::after {
-    content: 'Esse aritgo foi impresso através do site';
-}
+    content: 'esse artigo foi impressora por HW';
 
-article {
-    width: 100%;
 }
